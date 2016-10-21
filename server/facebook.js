@@ -11,7 +11,7 @@ var winston = require("winston"),
     https = require('https');
 
 function login(req, res, next) {
-    alert("MOHI");
+    console.log("MOHI !!!!!!!!!!!!!!!");
     console.log(req);
     console.log(res);
     console.log(next);
