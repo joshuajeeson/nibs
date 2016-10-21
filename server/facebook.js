@@ -11,7 +11,10 @@ var winston = require("winston"),
     https = require('https');
 
 function login(req, res, next) {
-
+    alert("MOHI");
+    console.log(req);
+    console.log(res);
+    console.log(next);
     var fbUser = req.body.user,
         fbToken = req.body.token;
 
