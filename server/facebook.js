@@ -2,7 +2,7 @@
  * Facebook Login Module
  * Provides functions to log in to the application as a Facebook user
  */
-
+console.log("facebook.js MO was here");
 var winston = require("winston"),
     Q = require('q'),
     auth = require('./auth'),
@@ -65,6 +65,7 @@ function login(req, res, next) {
 
 // Update a user with the Facebook user id.
 function updateUser(user, fbUserId) {
+    console.log("facebook.js create user MO was here");
     winston.info("Updating user " + user.id + " with FB id " + fbUserId);
     var externalUserId = (+new Date()).toString(36); // TODO: more robust UID logic
     return db.query(
